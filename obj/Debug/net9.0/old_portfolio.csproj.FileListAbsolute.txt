@@ -96,3 +96,4 @@ E:\WEB DEVELOP\.NET MVC\old_portfolio\obj\Debug\net9.0\ref\old_portfolio.dll
 E:\WEB DEVELOP\.NET MVC\old_portfolio\obj\Debug\net9.0\compressed\pnbocew2yx-pqy1g3jp88.gz
 E:\WEB DEVELOP\.NET MVC\old_portfolio\obj\Debug\net9.0\compressed\qomr61zf9w-p5uaauaifb.gz
 E:\WEB DEVELOP\.NET MVC\old_portfolio\obj\Debug\net9.0\compressed\k40im7o868-p5uaauaifb.gz
+E:\WEB DEVELOP\.NET MVC\old_portfolio\obj\Debug\net9.0\old_portfolio.sourcelink.json

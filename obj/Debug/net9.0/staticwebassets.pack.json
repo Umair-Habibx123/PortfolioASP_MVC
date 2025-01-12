@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\images\\cshp.jpeg"
     },
     {
+      "Id": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\eziline.png",
+      "PackagePath": "staticwebassets\\images\\eziline.png"
+    },
+    {
       "Id": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\flutter.png",
       "PackagePath": "staticwebassets\\images\\flutter.png"
     },
@@ -67,6 +71,10 @@
     {
       "Id": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\js.png",
       "PackagePath": "staticwebassets\\images\\js.png"
+    },
+    {
+      "Id": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\numl.png",
+      "PackagePath": "staticwebassets\\images\\numl.png"
     },
     {
       "Id": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\office.png",

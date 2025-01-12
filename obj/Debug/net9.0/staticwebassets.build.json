@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9R5z+sZnxzuk4JkdbxMa/bWGaYNUOltuffEUFLZBmoE=",
+  "Hash": "dBdRZe+1eRLjD5bUH1GrdNvIBopqPpOwtvF+aCWbTeU=",
   "Source": "old_portfolio",
   "BasePath": "_content/old_portfolio",
   "Mode": "Default",
@@ -1613,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot\\images\\cshp.jpeg"
     },
     {
+      "Identity": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\eziline.png",
+      "SourceId": "old_portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\",
+      "BasePath": "_content/old_portfolio",
+      "RelativePath": "images/eziline#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1gtorod62a",
+      "Integrity": "EVbY6+eRfjQeAVGGnx+DWq50TgwYCMw78tBFQesXuJ0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\eziline.png"
+    },
+    {
       "Identity": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\flutter.png",
       "SourceId": "old_portfolio",
       "SourceType": "Discovered",
@@ -1716,6 +1737,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\js.png"
+    },
+    {
+      "Identity": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\numl.png",
+      "SourceId": "old_portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\",
+      "BasePath": "_content/old_portfolio",
+      "RelativePath": "images/numl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "et60a1dsef",
+      "Integrity": "fh/4gkRfGSaWhWOVqxkB36KM6I3A2Teijn0gElePsxE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\numl.png"
     },
     {
       "Identity": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\office.png",
@@ -4228,6 +4270,88 @@
       ]
     },
     {
+      "Route": "images/eziline.1gtorod62a.png",
+      "AssetFile": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\eziline.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3738"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EVbY6+eRfjQeAVGGnx+DWq50TgwYCMw78tBFQesXuJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:32:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1gtorod62a"
+        },
+        {
+          "Name": "label",
+          "Value": "images/eziline.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EVbY6+eRfjQeAVGGnx+DWq50TgwYCMw78tBFQesXuJ0="
+        }
+      ]
+    },
+    {
+      "Route": "images/eziline.png",
+      "AssetFile": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\eziline.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3738"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EVbY6+eRfjQeAVGGnx+DWq50TgwYCMw78tBFQesXuJ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:32:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EVbY6+eRfjQeAVGGnx+DWq50TgwYCMw78tBFQesXuJ0="
+        }
+      ]
+    },
+    {
       "Route": "images/flutter.png",
       "AssetFile": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\flutter.png",
       "Selectors": [],
@@ -4634,6 +4758,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-7iUObKidMwGim6o6aSZaX/3UdgiUNXpJKxx4uwWN5W8="
+        }
+      ]
+    },
+    {
+      "Route": "images/numl.et60a1dsef.png",
+      "AssetFile": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\numl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17116"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fh/4gkRfGSaWhWOVqxkB36KM6I3A2Teijn0gElePsxE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "et60a1dsef"
+        },
+        {
+          "Name": "label",
+          "Value": "images/numl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fh/4gkRfGSaWhWOVqxkB36KM6I3A2Teijn0gElePsxE="
+        }
+      ]
+    },
+    {
+      "Route": "images/numl.png",
+      "AssetFile": "E:\\WEB DEVELOP\\.NET MVC\\old_portfolio\\wwwroot\\images\\numl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17116"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fh/4gkRfGSaWhWOVqxkB36KM6I3A2Teijn0gElePsxE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 08:41:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fh/4gkRfGSaWhWOVqxkB36KM6I3A2Teijn0gElePsxE="
         }
       ]
     },

@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-12">
             <img src="~/images/about_me2.jpg" alt="About Me" class="img-fluid w-100"
-                style="max-height: 80vh; object-fit: cover; filter: brightness(80%);">
+                style="max-height: 80vh; object-fit: cover; filter: brightness(75%);">
         </div>
     </div>
 </div>
@@ -16,22 +16,84 @@
     <div class="row align-items-center">
         <!-- Image Column -->
         <div class="col-lg-4 text-center mb-4 mb-lg-0">
-            <img src="~/images/umair.png" alt="Goku" class="img-fluid rounded-circle shadow-lg"
-                style="max-width: 80%; height: auto; border: 5px solid #6C63FF;">
+            <img src="~/images/umair.png" alt="Umair Habib" class="img-fluid rounded-circle shadow-lg"
+                style="max-width: 80%; height: auto; border: 5px solid #4E54C8;">
         </div>
 
         <!-- Text Column -->
         <div class="col-lg-8">
-            <h1 class="display-4 fw-bold text-primary mb-2">Hi There,</h1>
+            <h1 class="display-4 fw-bold text-primary mb-2">Hello There,</h1>
             <h1 class="display-4 fw-bold">I'M UMAIR <span class="text-danger">HABIB</span></h1>
             <p class="fs-5 mt-4 text-secondary">
                 Passionate Software Engineer fueled by curiosity and driven by innovation. With a blend of creativity
                 and technical expertise, I craft digital experiences that captivate and inspire. Let's embark on a
-                journey
-                where ideas come to life and possibilities are endless.
+                journey where ideas come to life and possibilities are endless.
             </p>
             <a href="/contact_me" class="btn btn-lg btn-outline-primary mt-3 px-5 py-2 rounded-pill"
-                style="font-size: 1.2rem; transition: background-color 0.3s, color 0.3s;">Get in Touch</a>
+                style="font-size: 1.2rem; transition: background-color 0.3s, color 0.3s; border-radius: 25px;">
+                Get in Touch
+            </a>
         </div>
     </div>
 </div>
+
+<!-- Custom CSS for Modern UI -->
+<style>
+    body {
+        background-color: #f4f7fc;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-primary {
+        color: #4E54C8 !important;
+    }
+
+    .text-danger {
+        color: #FF6F61 !important;
+    }
+
+    .btn-outline-primary {
+        border-color: #4E54C8;
+        color: #4E54C8;
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #4E54C8;
+        color: white;
+    }
+
+    .btn {
+        font-weight: bold;
+    }
+
+    h1 {
+        font-weight: 700;
+    }
+
+    /* Responsive Design for Smaller Screens */
+    @@media (max-width: 767px) {
+        .container {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .img-fluid {
+            max-width: 90%;
+        }
+
+        .btn-outline-primary {
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+</style>

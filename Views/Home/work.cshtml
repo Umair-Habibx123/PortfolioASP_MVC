@@ -5,8 +5,8 @@
 <div class="container py-5">
     <!-- Section Heading -->
     <section class="mb-4 text-center">
-        <h2 class="h1-responsive fw-bold" style="color: #4E54C8;">Work Experience</h2>
-        <p class="text-muted">Here is a glimpse of my professional and academic journey.</p>
+        <h2 class="h1-responsive fw-bold text-primary">Work Experience</h2>
+        <p class="text-muted">A glimpse into my professional and academic journey, showcasing the skills and projects I've worked on.</p>
     </section>
 
     <!-- Work Experience Timeline -->
@@ -35,35 +35,34 @@
             Projects = new[] {
                 new { Name = "Bag Society", Link = "https://bagsociety.vercel.app", Desc = "An e-commerce platform for bags built with React and Firebase." },
                 new { Name = "Portfolio Website", Link = "https://umairhabib.vercel.app", Desc = "A personal portfolio showcasing skills and projects, built using React." },
-                new { Name = "Portfolio Website (2)", Link = "https://umairhabib.vercel.app", Desc = "A personal portfolio showcasing skills and projects, built using ASP.NET MVC framework." }
+                new { Name = "Portfolio Website (2)", Link = "/", Desc = "A personal portfolio showcasing skills and projects, built using ASP.NET MVC framework." }
             }
         }
         })
         {
-            <div class="timeline-item d-flex align-items-start mb-5">
+            <div class="timeline-item mb-5">
                 <!-- Icon -->
-                <div class="timeline-icon d-flex align-items-center justify-content-center rounded-circle shadow"
+                <div class="timeline-icon d-flex align-items-center justify-content-center rounded-circle shadow-lg"
                     style="background-color: @experience.IconBg; width: 70px; height: 70px;">
-                    <img src="@experience.Icon" alt="@experience.Company" class="img-fluid"
-                        style="max-width: 45px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.2));">
+                    <img src="@experience.Icon" alt="@experience.Company" class="img-fluid" style="max-width: 45px;">
                 </div>
                 <!-- Content -->
-                <div class="timeline-content ms-4 p-4 bg-white shadow-sm rounded"
-                    style="border-left: 3px solid @experience.IconBg;">
-                    <h4 class="fw-bold mb-1" style="color: #333;">@experience.Title</h4>
-                    <h6 class="text-secondary mb-2">@experience.Company</h6>
-                    <p class="text-muted mb-2"><strong>@experience.Date</strong></p>
-                    <p class="text-muted mb-4">@experience.Description</p>
-                    
+                <div class="timeline-content bg-white p-4 shadow-sm rounded ms-4">
+                    <h4 class="fw-bold text-dark">@experience.Title</h4>
+                    <h6 class="text-muted">@experience.Company</h6>
+                    <p class="text-muted"><strong>@experience.Date</strong></p>
+                    <p>@experience.Description</p>
+
                     <!-- Projects Section -->
-                    <h5 class="fw-bold" style="color: #4E54C8;">Projects</h5>
+                    <h5 class="text-primary fw-bold">Projects</h5>
                     <ul class="list-unstyled">
                         @foreach (var project in experience.Projects)
                         {
-                            <li class="mb-3">
-                                <a href="@project.Link" target="_blank" class="text-decoration-none"
-                                    style="color: #6c63ff; font-weight: bold;">@project.Name</a>
-                                <p class="text-muted mb-0" style="font-size: 0.9rem;">@project.Desc</p>
+                            <li>
+                                <a href="@project.Link" target="_blank" class="text-decoration-none text-primary">
+                                    <h6 class="fw-bold">@project.Name</h6>
+                                </a>
+                                <p class="text-muted mb-2" style="font-size: 0.9rem;">@project.Desc</p>
                             </li>
                         }
                     </ul>
@@ -80,9 +79,9 @@
     }
 
     .timeline {
-        border-left: 3px solid #6c63ff;
-        padding-left: 2rem;
         position: relative;
+        margin-left: 2rem;
+        border-left: 3px solid #6c63ff;
     }
 
     .timeline-item {
@@ -94,7 +93,7 @@
         content: '';
         position: absolute;
         top: 18px;
-        left: -3px;
+        left: -5px;
         width: 12px;
         height: 12px;
         background-color: #6c63ff;
@@ -125,11 +124,11 @@
         margin-bottom: 1rem;
     }
 
-    /* Escaped media query */
+    /* Mobile Responsiveness */
     @@media (max-width: 768px) {
         .timeline {
+            margin-left: 0;
             border-left: none;
-            padding-left: 0;
         }
 
         .timeline-icon {
@@ -137,12 +136,12 @@
             top: 0;
         }
 
-        .timeline-item {
-            padding-left: 90px;
+        .timeline-content {
+            padding-left: 1rem;
         }
 
-        .timeline-content {
-            border-left: none;
+        .timeline-item:after {
+            left: 0;
         }
     }
 </style>
