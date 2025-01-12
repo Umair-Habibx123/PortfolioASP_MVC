@@ -1,0 +1,148 @@
+@{
+    ViewData["Title"] = "Works";
+}
+
+<div class="container py-5">
+    <!-- Section Heading -->
+    <section class="mb-4 text-center">
+        <h2 class="h1-responsive fw-bold" style="color: #4E54C8;">Work Experience</h2>
+        <p class="text-muted">Here is a glimpse of my professional and academic journey.</p>
+    </section>
+
+    <!-- Work Experience Timeline -->
+    <div class="timeline">
+        @foreach (var experience in new[] {
+        new { 
+            Title = "Flutter Development Intern", 
+            Company = "Eziline Software House", 
+            Icon = "/images/eziline.png", 
+            IconBg = "#6c63ff", 
+            Date = "July 2024 - October 2024", 
+            Description = "Developed high-performance Flutter applications with responsive UIs, including a News App, Gemini AI App, and FireStream Chat App using Firebase and APIs. Collaborated in Agile teams, leveraging Git for version control and ensuring seamless app performance while adhering to Material Design guidelines for intuitive user experiences.",
+            Projects = new[] {
+                new { Name = "News App", Link = "https://drive.google.com/uc?export=download&id=1-57F8mX7yjEAOgf9MyAF9WNgHw9yioOh", Desc = "A responsive news aggregator built using Flutter and NEWS API." },
+                new { Name = "Gemini AI App", Link = "https://drive.google.com/uc?export=download&id=1GXIrzNS8SF605yzT0YDiQ9_VGsMXi9j5", Desc = "An AI-driven productivity app leveraging Gemini API for real time AI response generation." },
+                new { Name = "FireStream Chat App", Link = "https://drive.google.com/uc?export=download&id=13u_c4Sga-Ywl7cZkuhnhS61HRGxsWlIBt", Desc = "A real-time chat application using Firebase Firestore." }
+            }
+        },
+        new { 
+            Title = "Web Development", 
+            Company = "Academic Experience", 
+            Icon = "/images/numl.png", 
+            IconBg = "#4E54C8", 
+            Date = "Academic Experience", 
+            Description = "Developed and maintained dynamic web applications, including the Bag Society e-commerce website (React and Firebase) and a personal portfolio website (React), successfully enhancing user experience and functionality. Implemented API integrations for seamless data flow and collaborated within Agile teams, utilizing Git and optimizing databases to achieve a 25% performance improvement.",
+            Projects = new[] {
+                new { Name = "Bag Society", Link = "https://bagsociety.vercel.app", Desc = "An e-commerce platform for bags built with React and Firebase." },
+                new { Name = "Portfolio Website", Link = "https://umairhabib.vercel.app", Desc = "A personal portfolio showcasing skills and projects, built using React." },
+                new { Name = "Portfolio Website (2)", Link = "https://umairhabib.vercel.app", Desc = "A personal portfolio showcasing skills and projects, built using ASP.NET MVC framework." }
+            }
+        }
+        })
+        {
+            <div class="timeline-item d-flex align-items-start mb-5">
+                <!-- Icon -->
+                <div class="timeline-icon d-flex align-items-center justify-content-center rounded-circle shadow"
+                    style="background-color: @experience.IconBg; width: 70px; height: 70px;">
+                    <img src="@experience.Icon" alt="@experience.Company" class="img-fluid"
+                        style="max-width: 45px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.2));">
+                </div>
+                <!-- Content -->
+                <div class="timeline-content ms-4 p-4 bg-white shadow-sm rounded"
+                    style="border-left: 3px solid @experience.IconBg;">
+                    <h4 class="fw-bold mb-1" style="color: #333;">@experience.Title</h4>
+                    <h6 class="text-secondary mb-2">@experience.Company</h6>
+                    <p class="text-muted mb-2"><strong>@experience.Date</strong></p>
+                    <p class="text-muted mb-4">@experience.Description</p>
+                    
+                    <!-- Projects Section -->
+                    <h5 class="fw-bold" style="color: #4E54C8;">Projects</h5>
+                    <ul class="list-unstyled">
+                        @foreach (var project in experience.Projects)
+                        {
+                            <li class="mb-3">
+                                <a href="@project.Link" target="_blank" class="text-decoration-none"
+                                    style="color: #6c63ff; font-weight: bold;">@project.Name</a>
+                                <p class="text-muted mb-0" style="font-size: 0.9rem;">@project.Desc</p>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Custom CSS for Timeline -->
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .timeline {
+        border-left: 3px solid #6c63ff;
+        padding-left: 2rem;
+        position: relative;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 2.5rem;
+    }
+
+    .timeline-item:after {
+        content: '';
+        position: absolute;
+        top: 18px;
+        left: -3px;
+        width: 12px;
+        height: 12px;
+        background-color: #6c63ff;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline-icon {
+        position: absolute;
+        left: -85px;
+        top: 0;
+    }
+
+    .timeline-content {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .timeline-content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    ul li {
+        margin-bottom: 1rem;
+    }
+
+    /* Escaped media query */
+    @@media (max-width: 768px) {
+        .timeline {
+            border-left: none;
+            padding-left: 0;
+        }
+
+        .timeline-icon {
+            left: 0;
+            top: 0;
+        }
+
+        .timeline-item {
+            padding-left: 90px;
+        }
+
+        .timeline-content {
+            border-left: none;
+        }
+    }
+</style>

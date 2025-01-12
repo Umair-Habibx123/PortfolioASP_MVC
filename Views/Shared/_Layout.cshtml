@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@ViewData["Title"] - Umair's Portfolio</title>
+  <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/WebApplication1.styles.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/css/Index.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    a.nav-link:hover {
+      color: #FFD700;
+      background-color: rgba(250, 250, 250, 0.1);
+    }
+
+    .btn:hover {
+      background-color: #FFD700;
+      color: #333;
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+      /* Prevent horizontal scrollbars */
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm"
+      style="background: linear-gradient(135deg, #6C63FF, #4E54C8);">
+      <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="~/images/OIP.jpg" alt="logo" height="50" width="60" class="me-2 rounded-circle" />
+          <span class="fw-bold text-light fs-4">Umair</span>
+        </a>
+
+        <!-- Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold px-3 py-2" href="/"
+                style="transition: color 0.3s, background-color 0.3s; font-size: 1.1rem;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold px-3 py-2" href="/about"
+                style="transition: color 0.3s, background-color 0.3s; font-size: 1.1rem;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold px-3 py-2" href="/skills"
+                style="transition: color 0.3s, background-color 0.3s; font-size: 1.1rem;">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fw-semibold px-3 py-2" href="/work"
+                style="transition: color 0.3s, background-color 0.3s; font-size: 1.1rem;">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-lg btn-outline-light text-light fw-bold px-4 py-2 rounded-pill"
+                href="/contact_me" style="transition: background-color 0.3s, color 0.3s; font-size: 1.1rem;">Contact
+                Me!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <div class="container-fluid px-0 bg-light">
+    <main role="main" class="pt-0">
+      <!-- Dynamic Content -->
+      @RenderBody()
+    </main>
+  </div>
+
+  <footer class="text-center text-white shadow-sm" style="background: linear-gradient(135deg, #6C63FF, #4E54C8);">
+    <div class="container py-3"></div>
+
+    <!-- Social Media Links -->
+    <section class="mb-4">
+      <a class="btn btn-floating m-1" style="background-color: #3b5998; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a class="btn btn-floating m-1" style="background-color: #55acee; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-floating m-1" style="background-color: #dd4b39; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-google"></i>
+      </a>
+      <a class="btn btn-floating m-1" style="background-color: #ac2bac; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a class="btn btn-floating m-1" style="background-color: #0082ca; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a class="btn btn-floating m-1" style="background-color: #333333; transition: transform 0.3s;" href="#!"
+        role="button">
+        <i class="fab fa-github"></i>
+      </a>
+    </section>
+
+    <!-- Copyright Section -->
+    <div class="text-center py-3" style="background: rgba(0, 0, 0, 0.1);">
+      © 2024 Copyright:
+      <a class="text-white fw-bold" href="https://yourwebsite.com" style="text-decoration: underline;">Umair's
+        Portfolio</a>
+    </div>
+  </footer>
+
+
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

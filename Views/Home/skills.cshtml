@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Skills";
+}
+
+<!-- Section Heading -->
+<div class="text-center py-5" style="background: linear-gradient(135deg, #6C63FF, #4E54C8); color: white;">
+    <h1 class="display-4 fw-bold">SKILLS & <span class="text-warning">ABILITIES</span></h1>
+</div>
+
+<!-- Skills Section -->
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+        <!-- Skill Card Template -->
+        @foreach (var skill in new[] {
+        new { Image = "/images/html.png", Name = "HTML" },
+        new { Image = "/images/R.png", Name = "CSS" },
+        new { Image = "/images/js.png", Name = "JavaScript" },
+        new { Image = "/images/java.jpg", Name = "Java" },
+        new { Image = "/images/c++.png", Name = "C++" },
+        new { Image = "/images/rails.png", Name = "Ruby on Rails" },
+        new { Image = "/images/react.png", Name = "React" },
+        new { Image = "/images/python.png", Name = "Python" },
+        new { Image = "/images/c.jpeg", Name = "C" },
+        new { Image = "/images/cshp.jpeg", Name = "C#" },
+        new { Image = "/images/android.png", Name = "Android Dev" },
+        new { Image = "/images/sql.jpeg", Name = "SQL" },
+        new { Image = "/images/bootstrap.png", Name = "Bootstrap" },
+        new { Image = "/images/tailwind.png", Name = "Tailwind" },
+        new { Image = "/images/github.png", Name = "GitHub" },
+        new { Image = "/images/flutter.png", Name = "Flutter Dev" }
+        })
+        {
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                <div class="p-3 d-flex flex-column justify-content-center align-items-center"
+                    style="background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 10px; height: 180px; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="@skill.Image" alt="@skill.Name" class="img-fluid mb-3"
+                        style="max-width: 60px; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.2));">
+                    <p class="mb-0 fw-semibold" style="font-size: 1.1rem; color: #333;">@skill.Name</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

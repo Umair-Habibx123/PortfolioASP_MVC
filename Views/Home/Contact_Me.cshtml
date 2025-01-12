@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Contact Me";
+}
+<script src="~/js/Contact_Me.js"></script>
+
+<div class="container py-5">
+    <!-- Section Heading -->
+    <section class="mb-4">
+        <h2 class="h1-responsive fw-bold text-center mb-4 text-primary">Contact Me</h2>
+        <p class="text-center w-responsive mx-auto mb-5 text-muted">
+            Do you have any questions? Please do not hesitate to contact me directly.
+        </p>
+
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-8 mb-4">
+                <form id="contact-form" name="contact-form" action="" method="POST">
+                    <div class="row g-3">
+                        <!-- Name -->
+                        <div class="col-md-6">
+                            <label for="SenderName" class="form-label">Your Name</label>
+                            <input type="text" id="SenderName" name="SenderName" class="form-control"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label for="recipientEmail" class="form-label">Your Email</label>
+                            <input type="email" id="recipientEmail" name="recipientEmail" class="form-control"
+                                placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-3">
+                        <!-- Phone -->
+                        <div class="col-md-12">
+                            <label for="phone" class="form-label">Contact No.</label>
+                            <input type="tel" id="phone" name="phone" class="form-control"
+                                placeholder="+92 123 456 7890" required>
+                        </div>
+                    </div>
+                    <div class="row g-3 mt-3">
+                        <!-- Message -->
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5"
+                                placeholder="Write your message here..." required></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center text-md-left mt-4">
+                        <button class="btn btn-primary btn-lg w-100" onclick="sendEmail()">Send Email</button>
+                    </div>
+                </form>
+                <div class="status mt-3"></div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="col-md-4 text-center">
+                <ul class="list-unstyled">
+                    <li class="mb-4">
+                        <i class="fas fa-map-marker-alt fa-2x text-danger"></i>
+                        <p class="mt-2 text-muted">Rawalpindi, Punjab 46000, PAK</p>
+                    </li>
+                    <li class="mb-4">
+                        <i class="fas fa-phone fa-2x text-success"></i>
+                        <p class="mt-2 text-muted">+92 342 511 7949</p>
+                    </li>
+                    <li class="mb-4">
+                        <i class="fas fa-envelope fa-2x text-primary"></i>
+                        <p class="mt-2 text-muted">umairhabibabc@gmail.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Modern UI Styling -->
+<style>
+    /* General Styling */
+    .btn-primary {
+        background: linear-gradient(135deg, #6c63ff, #4e54c8);
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #4e54c8, #3b3ab7);
+        transition: background-color 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 0 0 0.2rem rgba(108, 99, 255, 0.25);
+    }
+
+    /* Icon hover effect */
+    .fa-2x {
+        margin-bottom: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .fa-2x:hover {
+        transform: scale(1.2);
+    }
+
+    /* Contact Form */
+    .form-control {
+        border-radius: 8px;
+    }
+</style>

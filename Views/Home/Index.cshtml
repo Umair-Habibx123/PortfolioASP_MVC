@@ -1,0 +1,85 @@
+﻿﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<script src="~/js/Index.js"></script>
+<div class="container-fluid px-0 text-white" style="background: linear-gradient(135deg, #1A2A6C, #B21F1F, #F2D51D);">
+    <div class="row d-flex align-items-center min-vh-100 mx-0">
+        <div class="col-lg-7 p-5">
+            <h1 class="display-4 fw-bold">Hi There,</h1>
+            <h1 class="display-4 fw-bold">I'M UMAIR <span style="color: #FFD700;">HABIB</span></h1>
+            <p class="fs-5 mt-3">I am a Professional Software Engineer. 😊</p>
+            <div class="mt-4">
+                <button onclick="DownloadPDF();" class="btn btn-outline-light btn-lg me-3 shadow-sm">Download My
+                    Resume</button>
+                <button onclick="window.open('https://wa.me/923425117949/', '_blank');"
+                    class="btn btn-success btn-lg shadow-sm">
+                    <i class="fab fa-whatsapp"></i> Contact Me on WhatsApp
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center align-items-center p-5">
+            <img src="~/images/umair.png" alt="avatar" class="rounded-circle img-fluid shadow-lg"
+                style="max-width: 350px;">
+        </div>
+    </div>
+</div>
+
+<div class="my-5">
+    <hr class="border-0 mx-auto"
+        style="height: 4px; background: linear-gradient(90deg, #FF616D, #FFB037); width: 80%; border-radius: 2px;">
+</div>
+
+
+<!-- Services Section -->
+<div class="text-center py-5" style="background: linear-gradient(135deg, #D6E4F0, #F8F9FA);">
+    <h1 class="display-5 fw-bold text-dark">Services</h1>
+</div>
+
+<div class="container py-5">
+    <div class="row gy-4">
+        <!-- Front-End Service -->
+        <div
+            class="col-md-6 col-lg-3 mx-auto p-4 border border-light rounded-3 bg-white shadow-lg transition-all hover-shadow-lg hover:scale-105">
+            <img src="~/images/webdevelop.jpg" alt="Front-End" class="mb-3" width="60" height="60">
+            <h2 class="text-dark mb-3">Front-End</h2>
+            <p>
+                I specialize in crafting immersive and responsive web experiences that captivate users and elevate
+                brands. Let's bring your vision to life and create unforgettable digital experiences.
+            </p>
+        </div>
+
+        <!-- Mobile App Service -->
+        <div
+            class="col-md-6 col-lg-3 mx-auto p-4 border border-light rounded-3 bg-white shadow-lg transition-all hover-shadow-lg hover:scale-105">
+            <img src="~/images/appdevelop.jpg" alt="Mobile App" class="mb-3" width="60" height="60">
+            <h2 class="text-dark mb-3">Mobile App</h2>
+            <p>
+                As an experienced Android app developer, I design and develop robust apps that deliver seamless
+                performance, scalability, and engaging user experiences across devices.
+            </p>
+        </div>
+
+        <!-- Back-End Service -->
+        <div
+            class="col-md-6 col-lg-3 mx-auto p-4 border border-light rounded-3 bg-white shadow-lg transition-all hover-shadow-lg hover:scale-105">
+            <img src="~/images/backend.jpg" alt="Back-End" class="mb-3" width="60" height="60">
+            <h2 class="text-dark mb-3">Back-End</h2>
+            <p>
+                I specialize in backend development, crafting robust and scalable solutions using technologies like
+                Python, Node.js, and frameworks like Django and Express.js.
+            </p>
+        </div>
+
+        <!-- Project Management Service -->
+        <div
+            class="col-md-6 col-lg-3 mx-auto p-4 border border-light rounded-3 bg-white shadow-lg transition-all hover-shadow-lg hover:scale-105">
+            <img src="~/images/projectmanage.jpg" alt="Project Management" class="mb-3" width="60" height="60">
+            <h2 class="text-dark mb-3">Consultant & Project Management</h2>
+            <p>
+                I excel in coordinating resources, managing timelines, and delivering results with strategic leadership.
+                Let's collaborate to achieve your goals and exceed expectations.
+            </p>
+        </div>
+    </div>
+</div>
